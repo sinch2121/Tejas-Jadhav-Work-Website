@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Architecture — Tejas G Jadhav</title>
+<meta name="description" content="I'm Tejas Jadhav, an architect working between Belagavi and Bagalkot. My work moves between research-driven institutional design, urban insertion, housing, and hands-on residential practice.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="blueprint" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a href="index.html" class="brand" aria-label="Tejas G Jadhav home">
+    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M3 27V13L16 4L29 13V27" stroke="var(--ink)" stroke-width="1.4"/><path d="M10 27V17H22V27M16 4V17M3 13H29" stroke="var(--accent)" stroke-width="1.1"/><path d="M13 27V21H19V27" stroke="var(--copper)" stroke-width="1.1"/></svg>
+    Ar. Tejas G Jadhav
+  </a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="index.html" class="is-active"><span>01</span>About</a>
+    <a href="work.html"><span>02</span>Work</a>
+    <a href="index.html#services"><span>03</span>Services</a>
+    <a href="research.html"><span>04</span>Research</a>
+    <a href="set.html"><span>05</span>Creative</a>
+    <a href="contact.html"><span>06</span>Contact</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<main>
+  <section class="hero">
+    <!-- Custom architectural elevation: stepped volumes, glazing, trees and ground line -->
+    <svg class="hero-plan" viewBox="0 0 760 570" fill="none" role="img" aria-label="Minimal line drawing of contemporary buildings in a landscaped setting">
+      <defs>
+        <linearGradient id="elevationFade" x1="380" y1="70" x2="380" y2="530" gradientUnits="userSpaceOnUse"><stop stop-color="#A8B8AD"/><stop offset="1" stop-color="#A8B8AD" stop-opacity=".25"/></linearGradient>
+        <pattern id="glassLines" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M0 0V22M0 0H22" stroke="#A8B8AD" stroke-opacity=".42" stroke-width=".7"/></pattern>
+      </defs>
+      <g stroke="url(#elevationFade)" stroke-width="1.35">
+        <!-- rear block -->
+        <path d="M260 170H500V390H260Z" fill="#82968B" fill-opacity=".035"/>
+        <path d="M260 170L310 132H550L500 170M500 170L550 132V350L500 390"/>
+        <path d="M310 132V350M350 170V390M390 170V390M430 170V390M470 170V390" stroke-opacity=".55"/>
+        <path d="M260 214H500M260 258H500M260 302H500M260 346H500" stroke-opacity=".42"/>
+        <!-- front low pavilion -->
+        <path d="M130 286H370V430H130Z" fill="#82968B" fill-opacity=".055"/>
+        <path d="M130 286L174 252H414L370 286M370 286L414 252V396L370 430"/>
+        <path d="M174 252V396M214 286V430M254 286V430M294 286V430M334 286V430" stroke-opacity=".5"/>
+        <path d="M130 333H370M130 380H370" stroke-opacity=".5"/>
+        <!-- deep entrance / glass -->
+        <path d="M254 333H294V430H254Z" fill="#AD765A" fill-opacity=".12" stroke="#C18F73"/>
+        <path d="M274 333V430" stroke="#C18F73" stroke-opacity=".6"/>
+        <!-- canopy -->
+        <path d="M104 282H388L414 252H130L104 282Z" fill="#A8B8AD" fill-opacity=".07"/>
+        <path d="M105 282V293M388 282V293"/>
+        <!-- plinth and landscape -->
+        <path d="M65 430H565M88 443H592M118 456H558" stroke-opacity=".48"/>
+        <path d="M92 430L80 443M114 430L102 443M136 430L124 443M480 430L468 443M502 430L490 443M524 430L512 443" stroke-opacity=".5"/>
+        <!-- tree left -->
+        <path d="M95 430V340M95 370L74 350M95 388L119 363M95 354L110 336" stroke="#82968B"/>
+        <path d="M95 327C67 327 61 302 79 290C71 269 96 255 111 274C134 269 147 293 130 309C127 326 111 332 95 327Z" fill="#82968B" fill-opacity=".10" stroke="#82968B"/>
+        <path d="M95 327V340" stroke="#82968B"/>
+        <!-- smaller tree right -->
+        <path d="M578 430V370M578 394L560 379M578 405L594 390" stroke="#82968B"/>
+        <path d="M578 365C557 365 551 346 565 337C559 321 578 310 590 324C608 321 617 339 604 351C602 363 590 368 578 365Z" fill="#82968B" fill-opacity=".08" stroke="#82968B"/>
+        <!-- grass strokes -->
+        <path d="M44 430L37 418M52 430L52 414M60 430L67 420M618 443L611 431M626 443L626 427M634 443L642 431M654 456L648 445M662 456L663 442M670 456L677 445" stroke="#82968B" stroke-opacity=".8"/>
+        <!-- scale figure -->
+        <circle cx="445" cy="401" r="5" stroke="#C18F73"/><path d="M445 406V424M445 411L436 418M445 411L454 418M445 424L438 435M445 424L452 435" stroke="#C18F73"/>
+        <!-- annotation ticks -->
+        <path d="M260 115V96H342M550 115V96H485M130 474V490H210M565 474V490H488" stroke-opacity=".45" stroke-dasharray="3 5"/>
+        <path d="M250 96H260M550 96H560M200 490H210M488 490H498" stroke="#C18F73"/>
+      </g>
+      <g fill="#A8B8AD" fill-opacity=".72" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.5">
+        <text x="350" y="89">ELEVATION / 01</text><text x="214" y="508">LANDSCAPE EDGE</text><text x="492" y="508">1:200 — STUDY</text>
+      </g>
+    </svg>
+    <div class="wrap">
+      <p class="hero-kicker">ARCHITECTURE · PLANNING · SPATIAL DESIGN</p>
+      <h1>Practicing<br>Architectural<br>Designer.</h1>
+      <p class="hero-sub">I'm Tejas Jadhav, an architect working in Belagavi, Karnataka. My work moves between research-driven institutional design, urban insertion, housing, and professional practice.</p>
+      <div class="hero-foot"><div class="scroll-cue">SCROLL TO EXPLORE</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal"><div><p class="tag">DISCIPLINES — 04</p><h2>WORK</h2></div><p>Four chapters of the same practice. Explore the ideas, processes and places behind each one.</p></div>
+      <div class="cat-grid reveal">
+        <a class="cat" href="work.html?category=practice"><span class="cat-num">01 / BUILT</span><div><h3>Practice</h3><p>Houses I've built or am building — site supervision, material choices, and the parts drawings don't show.</p></div></a>
+        <a class="cat" href="work.html?category=internship"><span class="cat-num">02 / STUDIO</span><div><h3>Internship</h3><p>Time spent in other studios, under other architects, learning how a practice actually runs.</p></div></a>
+        <a class="cat" href="work.html?category=academic"><span class="cat-num">03 / STUDIES</span><div><h3>Academic</h3><p>The projects with no client and no budget — just a brief, a site, and ten semesters to think.</p></div></a>
+        <a class="cat" href="set.html?category=creative"><span class="cat-num">04 / EXPERIMENT</span><div><h3>Creative</h3><p>Set design for theatre and film — spatial thinking without the constraint of it having to stand for fifty years.</p></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-head reveal"><div><p class="tag">WHAT I DO</p><h2>SERVICES</h2></div><p>From concept to completion, I work across architecture, interiors, and visual design — shaping ideas into thoughtful, buildable spaces.</p></div>
+      <div class="bubble-grid reveal">
+        <a href="contact.html" class="bubble"><span class="bubble-label">2D Drawings</span></a>
+        <a href="contact.html" class="bubble"><span class="bubble-label">3D Modelling</span></a>
+        <a href="contact.html" class="bubble"><span class="bubble-label">Site<br>Consultation</span></a>
+        <a href="contact.html" class="bubble"><span class="bubble-label">Interior<br>Design</span></a>
+        <a href="contact.html" class="bubble"><span class="bubble-label">Set<br>Design</span></a>
+        <a href="contact.html" class="bubble bubble-collab"><span class="bubble-label">Open for<br>Collaboration</span><span class="bubble-arrow">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal"><div><p class="tag">HOW I WORK — 05 STEPS</p><h2 class="one-line">From Concept to Completion</h2></div></div>
+      <div class="process reveal">
+        <div class="pstep"><span class="n">01</span><h4>Understand</h4><p>I begin by understanding your brief, context, site and requirements — listening carefully before deciding how the project should take shape.</p></div>
+        <div class="pstep"><span class="n">02</span><h4>Develop</h4><p>I translate ideas into sketches, drawings, models and visualisations, exploring possibilities until the right direction becomes clear.</p></div>
+        <div class="pstep"><span class="n">03</span><h4>Refine</h4><p>I develop the chosen direction through space, proportion, materials, details and practical considerations, making sure every element works together.</p></div>
+        <div class="pstep"><span class="n">04</span><h4>Visualise</h4><p>I use drawings, 3D models and realistic visualisations to communicate the design clearly and help you experience the space before it is built.</p></div>
+        <div class="pstep"><span class="n">05</span><h4>Deliver</h4><p>I provide the drawings, details and design inputs needed for execution, staying involved through coordination and site consultation as the project takes shape.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band"><div class="wrap reveal"><h2>Have a site in mind?</h2><div class="cta-row"><p style="max-width:44ch;color:var(--ink-70);font-size:16px;">I take on a number of projects each year. Tell me about the site and the brief.</p><a href="contact.html" class="btn"><span>Start a conversation ↗</span></a></div></div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="foot-big reveal">Let's build something new.</div>
+  <div class="foot-grid" style="margin-top:60px;">
+    <div><h5>Ar. Tejas G Jadhav</h5><p style="max-width:32ch;color:var(--ink-70);font-size:14.5px;">An independent architectural practice based in Belagavi, Karnataka — working on residential, commercial and creative projects.</p></div>
+    <div><h5>SITE</h5><ul><li><a href="index.html">About</a></li><li><a href="work.html">Work</a></li><li><a href="index.html#services">Services</a></li><li><a href="research.html">Research</a></li><li><a href="set.html">Creative</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h5>LOCATION</h5><ul><li>Belagavi, Karnataka</li></ul></div>
+    <div><h5>FOLLOW</h5><ul><li><a href="https://www.instagram.com/jadhav.tejas__?stkn=MXV4OHNqcGVzbnhxZA==" target="_blank" rel="noopener noreferrer">Instagram ↗</a></li><li><a href="https://www.linkedin.com/in/tejas-jadhav-109026256/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li></ul></div>
+  </div>
+  <div class="foot-bottom"><span>© 2026 Ar. Tejas G Jadhav — ALL DRAWINGS RESERVED</span><span>DESIGNED by Sinchana S.</span></div>
+</div></footer>
+<script src="script.js"></script>
+</body>
+</html>

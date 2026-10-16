@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Research</title>
+<meta name="description" content="Research — Tejas Jadhav">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- pdf.js: renders PDF pages as canvas images instead of a linked/native viewer -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+
+<body>
+
+<div class="blueprint"></div>
+<div class="cursor"></div>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M3 20V9L12 3L21 9V20" stroke="var(--ink)" stroke-width="1.6"/><path d="M9 20V13H15V20" stroke="var(--ink)" stroke-width="1.6"/></svg>
+    Ar. Tejas G Jadhav
+  </a>
+  <nav class="site-nav">
+    <a href="index.html"><span>01</span>About</a>
+    <a href="work.html"><span>02</span>Work</a>
+    <a href="index.html#services"><span>03</span>Services</a>
+    <a href="research.html" class="is-active"><span>04</span>Research</a>
+    <a href="set.html"><span>05</span>Creative</a>
+    <a href="contact.html"><span>05</span>Contact</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+
+<main class="project-page">
+
+  <!-- ============================================================
+       RESEARCH TITLE
+  ============================================================ -->
+<section class="project-hero">
+  <div class="wrap">
+    <div class="project-hero-grid">
+      <div class="reveal">
+        <p class="project-kicker">
+          Research — Temporium International Conference 2026
+        </p>
+
+        <h1 class="project-title">
+          <span class="title-main">Kalagriha:</span>
+          <span class="title-sub">
+            Reimagining Performing<br> Arts Infrastructure in Belgavi
+          </span>
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ============================================================
+       RESEARCH INFO
+  ============================================================ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="project-information">
+        <div class="project-description reveal">
+          <p>
+            Research derived from the Kalagriha thesis, examining how architecture
+            can respond to Belagavi's fading theatre and filmmaking culture — accepted
+            for presentation at Temporium 2026, held by Christ University with THWS
+            Germany, SPA New Delhi, INTACH and ICOMOS India.
+          </p>
+        </div>
+
+        <div class="project-details reveal">
+          <div class="project-detail"><b>Belagavi</b><span>Location studied</span></div>
+          <div class="project-detail"><b>2026</b><span>Conference year</span></div>
+          <div class="project-detail"><b>Temporium</b><span>Conference</span></div>
+          <div class="project-detail"><b>Accepted</b><span>Status</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PDF DOCUMENTS — scroll to view, not downloadable
+  ============================================================ -->
+  <section class="project-gallery">
+    <div class="wrap">
+
+      <div class="project-gallery-head">
+        <h2>Documents</h2>
+        <span>SCROLL TO READ</span>
+      </div>
+
+      <!-- One block per PDF. Duplicate this whole .pdf-block for a second document. -->
+      <div class="pdf-block reveal">
+        <div class="pdf-label">
+          <h3>Research Paper</h3>
+          <span id="pdf-count-1">— PAGES</span>
+        </div>
+        <div class="pdf-viewer" data-pdf-src="docs/kalagriha-paper.pdf" data-count-target="pdf-count-1">
+          <div class="pdf-pages"></div>
+          <div class="pdf-loading">Loading document…</div>
+        </div>
+      </div>
+
+    
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BACK TO WORK
+  ============================================================ -->
+ 
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-big reveal">Let's build something new.</div>
+
+    <div class="foot-grid" style="margin-top:60px;">
+      <div>
+        <h5>AR. TEJAS G JADHAV</h5>
+        <p style="max-width:32ch; color:var(--ink-70); font-size:14.5px;">
+          An independent architectural practice based in Belagavi, Karnataka — working on residential, commercial and creative projects.
+        </p>
+      </div>
+      <div>
+        <h5>SITE</h5>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="set.html">Creative</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Location</h5>
+        <ul>
+          <li>Belgaum, Karnataka</li>
+        
+        </ul>
+      </div>
+      <div>
+        <h5>FOLLOW</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/jadhav.tejas__?stkn=MXV4OHNqcGVzbnhxZA==">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/tejas-jadhav-109026256/" target="_blank" rel="noopener">LinkedIn</a></li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© 2026 Ar. Tejas G Jadhav — ALL DRAWINGS RESERVED</span>
+      <span>Designed by Sinchana S. </span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="pdf-viewer.js"></script>
+</body>
+</html>
+
+<script>
+/* ============================================================
+   RESEARCH PAGE — PDF viewer
+   Renders each PDF page as a canvas image inside a scrollable
+   box. No native browser PDF toolbar, no download button,
+   no selectable/copyable text, no right-click save.
+============================================================ */
+document.addEventListener("DOMContentLoaded", () => {
+
+  const containers = document.querySelectorAll(".pdf-viewer[data-pdf-src]");
+  if (!containers.length || typeof pdfjsLib === "undefined") return;
+
+  pdfjsLib.GlobalWorkerOptions.workerSrc =
+    "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+  containers.forEach(async (container) => {
+    const url = container.dataset.pdfSrc;
+    const pagesWrap = container.querySelector(".pdf-pages");
+    const loading = container.querySelector(".pdf-loading");
+    const countLabel = document.getElementById(container.dataset.countTarget);
+
+    // Block the easy download/copy paths inside this viewer only.
+    container.addEventListener("contextmenu", (e) => e.preventDefault());
+    container.addEventListener("dragstart", (e) => e.preventDefault());
+
+    try {
+      const pdf = await pdfjsLib.getDocument(url).promise;
+
+      if (countLabel) {
+        countLabel.textContent = `${String(pdf.numPages).padStart(2, "0")} PAGES`;
+      }
+
+      for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+        const page = await pdf.getPage(pageNum);
+        const baseViewport = page.getViewport({ scale: 1 });
+        const targetWidth = pagesWrap.clientWidth || 760;
+        const scale = (targetWidth / baseViewport.width) * 1.5; // 1.5x for sharpness on retina screens
+        const viewport = page.getViewport({ scale });
+
+        const canvas = document.createElement("canvas");
+        canvas.className = "pdf-page";
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+        canvas.style.width = "100%";
+        canvas.style.height = "auto";
+        pagesWrap.appendChild(canvas);
+
+        const ctx = canvas.getContext("2d");
+        await page.render({ canvasContext: ctx, viewport }).promise;
+      }
+
+      loading.remove();
+    } catch (err) {
+      loading.textContent = "Couldn't load this document.";
+      console.error("PDF load failed:", url, err);
+    }
+  });
+});
+</script>
