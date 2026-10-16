@@ -1,5 +1,7 @@
 About the Project
 
+Live now: https://architect-tejasjadhav.netlify.app/
+
 This website was created for my Architect friend to use for his professional work. It gives him a simple, clean online presence where clients can view his projects, learn about his services, and get in touch.
 
 Features: 
